@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require "yahoo_news"
+puts YahooNews.get
