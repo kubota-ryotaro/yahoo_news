@@ -21,14 +21,14 @@ Or install it yourself as:
 - When you type `yahoo_news`, the result is output to the command line.
   - $ `yahoo_news`
   -  => 18時49分更新
-  -  =>  {"猛暑は1週間続く見込み 警戒"=>"https://news.yahoo.co.jp/pickup/6290002"}
-  -  =>  {"豪雨 農林水産被害436億円に"=>"https://news.yahoo.co.jp/pickup/6290004"}
-  -  =>  {"東電を集団提訴 浪江町民検討"=>"https://news.yahoo.co.jp/pickup/6289982"}
-  -  =>  {"豪雨避難 残した犬無事だった"=>"https://news.yahoo.co.jp/pickup/6290003"}
-  -  =>  {"医師悩む「大丈夫」使い方"=>"https://news.yahoo.co.jp/pickup/6289997"}
-  -  =>  {"村のそばに巨大氷山 住民避難"=>"https://news.yahoo.co.jp/pickup/6289994"}
-  -  =>  {"春8強やシード校 相次ぎ敗退"=>"https://news.yahoo.co.jp/pickup/6290006"}
-  -  =>  {"有村智恵が感涙 6季ぶり優勝"=>"https://news.yahoo.co.jp/pickup/6289995"}
+    -  =>  {:title=>"連休中 4万人がボランティア", :url=>"https://news.yahoo.co.jp/pickup/6290099"}
+    -  =>  {:title=>"熱中症 近畿で240人超搬送", :url=>"https://news.yahoo.co.jp/pickup/6290107"}
+    -  =>  {:title=>"豪雨被災地で結膜炎相次ぐ", :url=>"https://news.yahoo.co.jp/pickup/6290088"}
+    -  =>  {:title=>"税に不満 市役所に車突っ込む", :url=>"https://news.yahoo.co.jp/pickup/6290106"}
+    -  =>  {:title=>"韓国大統領 公約守れず謝罪", :url=>"https://news.yahoo.co.jp/pickup/6290095"}
+    -  =>  {:title=>"W杯の出場国拡大 弊害だらけ", :url=>"https://news.yahoo.co.jp/pickup/6290111"}
+    -  =>  {:title=>"当選届かず客ゼロ 奥華子謝罪", :url=>"https://news.yahoo.co.jp/pickup/6290103"}
+    -  =>  {:title=>"斎藤工が被災地に 住民喜び", :url=>"https://news.yahoo.co.jp/pickup/6290104"}
 
 ## Development
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
