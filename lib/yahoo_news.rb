@@ -8,27 +8,24 @@ module YahooNews
     file = open(input_url)
     str = file.read
 
-    # get date
-    str_date = str.match(/\d+時\d+分/)
+    # get time
+    str_time = str.match(/\d+時\d+分更新/)
 
     # news_table
-    str = str.match(/<a href="https:\/\/news\.yahoo.co\.jp\/pickup\/\d+">.*<img src=".+><\/a><\/td><\/tr><tr><td>/)
+    str = str.match(%r(<a href="https://news.yahoo.co.jp/pickup/\d+">.*<img src=".+></a></td></tr><tr><td>))
 
     # get urls
-    str_urls = URI.extract(str[0],['https'])
+    urls = URI.extract(str[0],['https'])
 
     # get article_titles
-    str_titles = str[0].gsub!(/<("[^"]*"|'[^']*'|[^'">])*>/, "")
-    str_titles = str_titles.split("・")
+    titles = str[0].gsub!(/<("[^"]*"|'[^']*'|[^'">])*>/, "")
+    titles = titles.split("・")
 
     # Make it hash structure.
-    output_news = []
-    for i in 0..str_urls.size-1 do
-      output_news[i] = {"#{str_titles[i]}" => "#{str_urls[i]}"}
-    end
+    output_news = titles.map.with_index { |title, i| { title: title, url: urls[i] } }
 
     # output news!
-    puts str_date
+    puts str_time
     puts output_news
   end
 end
