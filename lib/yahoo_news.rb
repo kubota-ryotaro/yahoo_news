@@ -9,7 +9,7 @@ module YahooNews
     str = file.read
 
     # get date
-    str_date = str.match(/\d+時\d+分更新/)
+    str_date = str.match(/\d+時\d+分/)
 
     # news_table
     str = str.match(/<a href="https:\/\/news\.yahoo.co\.jp\/pickup\/\d+">.*<img src=".+><\/a><\/td><\/tr><tr><td>/)
